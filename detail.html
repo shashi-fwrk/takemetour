@@ -1,0 +1,609 @@
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Detail</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+<link href="css/slick-theme.css" rel="stylesheet">
+<link href="css/checkbox.css" rel="stylesheet">
+<link href="css/lightgallery.css" rel="stylesheet">
+<!-- datepicker -->
+<link href="css/datepicker.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="displayCalendar()">
+  <nav class="navbar navbar-default navbar-fixed-top" style="background: #15304d;border: 0px;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#" style="color:#fff;">LOGO</a> </div>
+      <div id="navbar" class="navbar-collapse collapse topbar">
+        <ul class="nav navbar-nav navbar-right header">
+          <li class="slt">
+            <select>
+              <option value="d" selected>USD</option>
+              <option value="e">Dollar</option>
+              <option value="f">Euro</option>
+            </select>
+          </li>
+          <li class="tripbtn"><a href="#"><span>List Your Trip</span></a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#" data-toggle="modal" data-target=".loginmodal">Log In</a></li>
+          <li><a href="#" data-toggle="modal" data-target=".signupmodal">Sign Up</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle account" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.jpg" /> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dollar</a></li>
+              <li><a href="#">Euro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </nav>
+  
+  <!-- Gallery Section Start Here -->
+  <section class="gallery_sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul id="lightgallery" class="list-unstyled row">
+            <li class="col-xs-12" data-responsive="images/tour.jpg 375, images/tour.jpg 480, images/tour.jpg 800" data-src="images/tour.jpg"> <a href=""> <img class="img-responsive" src="images/tour.jpg"> </a> </li>
+            <li class="col-xs-12" data-responsive="images/think.jpg 375, images/think.jpg 480, images/think.jpg 800" data-src="images/think.jpg"> <a href=""> <img class="img-responsive" src="images/think.jpg"> </a> </li>
+            <li class="col-xs-12" data-responsive="images/tour.jpg 375, images/tour.jpg 480, images/tour.jpg 800" data-src="images/tour.jpg"> <a href=""> <img class="img-responsive" src="images/tour.jpg"> </a> </li>
+            <li class="col-xs-12" data-responsive="images/think.jpg 375, images/think.jpg 480, images/think.jpg 800" data-src="images/think.jpg"> <a href=""> <img class="img-responsive" src="images/think.jpg"> </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Gallery Section End Here -->
+
+<section class="product_detail" >
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Library</a></li>
+      <li class="active">Data</li>
+    </ol>
+    <div class="row">
+      <div class="col-sm-9 content_height">
+        <div class="">
+          <div class="share"> <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> <span>Share</span></a> <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> <span>Add to wishlist</span></a> </div>
+          <div class="tour_desc">
+            <h2>Old Town Walking Tour</h2>
+            <p><img src="images/loc.png" />Bangkok</p>
+            <div class="satisfy"> <span><i class="fa fa-check" aria-hidden="true"></i> Satisfaction guaranteed</span> <span><i class="fa fa-check" aria-hidden="true"></i> Free hotel pickup</span> </div>
+            <div class="explore">
+              <p>Exploring the old town area with your local expert! Indulge yourself in this beautiful city along the river.</p>
+              <ul>
+                <li><i class="fa fa-bus" aria-hidden="true"></i><span>Public Transportation</span></li>
+                <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>7 hours</span></li>
+                <li><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>2,505 travelers liked</span></li>
+                <div class="line"></div>
+                <li><i><img src="images/food.png" /></i><span>Street Food</span></li>
+                <li><i class="fa fa-building" aria-hidden="true"></i><span>City Tour</span></li>
+              </ul>
+            </div>
+            <div class="hosted"> <i class="left"><img src="images/logo.png" /></i>
+              <div class="host_name left">
+                <h5>Hosted by</h5>
+                <h2>TakeMeTour Local Expert L.</h2>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="ques">
+              <h3>FAQ</h3>
+              <div class="faq">
+                <div class="faq_ques"> Why this trip? </div>
+                <div class="faq_ques"> Discovering places in the old town of Bangkok, while learning local stories of each place. Let me show you around ;) </div>
+              </div>
+              <div class="faq">
+                <div class="faq_ques"> How local is it? </div>
+                <div class="faq_ques"> Since we will be exploring places by Chao Phraya river, you will get ti observe the local way of life and try different street foods. :9 </div>
+              </div>
+              <div class="faq">
+                <div class="faq_ques"> What makes it unique? </div>
+                <div class="faq_ques"> Not only visiting the most iconic landmarks of this are, I'll take you to try some of the most delicious Thai foods in this area. (because I'm a big fan of food. lol ) Plus, I'll teach you some Thai words too. </div>
+              </div>
+              <div class="faq">
+                <div class="faq_ques"> Things to prepare for the trip </div>
+                <div class="faq_ques"> - Comfortable & light clothes / shoes - Hat or cap - Sunglasses - Sunscreen </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Gallery Section Start Here -->
+          <div class="gallery_sec gal_sec">
+            <div class="row">
+              <div class="col-md-12">
+                <ul id="lightgallerys" class="list-unstyled row">
+                  <li class="col-xs-6 col-md-4" data-responsive="images/tour.jpg 375, images/tour.jpg 480, images/tour.jpg 800" data-src="images/tour.jpg">
+                    <div class="img_wrapper"> <a href=""> <img class="img-responsive" src="images/tour.jpg"> </a> </div>
+                  </li>
+                  <li class="col-xs-6 col-md-4" data-responsive="images/think.jpg 375, images/think.jpg 480, images/think.jpg 800" data-src="images/think.jpg">
+                    <div class="img_wrapper"> <a href=""> <img class="img-responsive" src="images/think.jpg"> </a> </div>
+                  </li>
+                  <li class="col-xs-6 col-md-4" data-responsive="images/tour.jpg 375, images/tour.jpg 480, images/tour.jpg 800" data-src="images/tour.jpg">
+                    <div class="img_wrapper"> <a href=""> <img class="img-responsive" src="images/tour.jpg"> </a> </div>
+                  </li>
+                  <li class="col-xs-6 col-md-4" data-responsive="images/think.jpg 375, images/think.jpg 480, images/think.jpg 800" data-src="images/think.jpg">
+                    <div class="img_wrapper"> <a href=""> <img class="img-responsive" src="images/think.jpg"> </a> </div>
+                  </li>
+                  <li class="col-xs-6 col-md-4" data-responsive="images/think.jpg 375, images/think.jpg 480, images/think.jpg 800" data-src="images/think.jpg">
+                    <div class="img_wrapper"> <a href=""> <img class="img-responsive" src="images/think.jpg"> </a> </div>
+                  </li>
+                  <li class="col-xs-6 col-md-4" data-responsive="images/tour.jpg 375, images/tour.jpg 480, images/tour.jpg 800" data-src="images/tour.jpg">
+                    <div class="img_wrapper"> <a href=""> <img class="img-responsive" src="images/tour.jpg"> </a>
+                      <h4>See all 12 photos</h4>
+                      <div class="overlay"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Section End Here -->
+          <div class="ques">
+            <h3>Itinerary</h3>
+            <div class="faq">
+              <div class="faq_ques"> 10:00 </div>
+              <div class="faq_ques"> Meet up at our meeting point<br>
+                - BTS Station (Krung Thon Buri, Saphan Taksin, Siam)<br>
+                - MRT Station (Hua Lamphong)<br>
+                - Hotel lobby (in Bangkok area)<br>
+                - Railway Station (Hua Lamphong Railway Station) </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> 12:00 </div>
+              <div class="faq_ques"> Lunch time...! Variety of choice! We can discuss. :) </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> 13:00 </div>
+              <div class="faq_ques"> Continue our trips (Flexible)<br>
+                Recommended places<br>
+                Art & History >> Rattanakosin Interactive Exhibition<br>
+                River Tour >> Go along "Chao Phra Ya" River and see life and old building 2 sides of the river </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> 15:00 </div>
+              <div class="faq_ques"> Visit Wanglang Market, then, cross the river to Tha Prachan. Move on to Sanam Luang with the Royal Palace View. Taste some street food from local :) </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> 17:00 </div>
+              <div class="faq_ques"> Relax by Suan Santi Chai Prakarn Park (Tha Pra Arthit pier). Stroll along Rama 8 Bridge with stunning view! </div>
+            </div>
+          </div>
+          <!--ques-->
+          
+          <div class="ques">
+            <h3>Trip detail</h3>
+            <div class="faq">
+              <div class="faq_ques"> <i class="fa fa-car" aria-hidden="true"></i> Transportation : </div>
+              <div class="faq_ques"> Public Transportation </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> <i class="fa fa-users" aria-hidden="true"></i> Max travelers : </div>
+              <div class="faq_ques"> 3 </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> <i class="fa fa-comments" aria-hidden="true"></i> Language : </div>
+              <div class="faq_ques"> English </div>
+            </div>
+            <div class="faq">
+              <div class="faq_ques"> <i class="fa fa-briefcase" aria-hidden="true"></i> Trip conditions: </div>
+              <div class="faq_ques"> <i><img src="images/plan.png" /></i> Flexible plan<br>
+                <i><img src="images/casual.png" /></i> Smart casual </div>
+            </div>
+          </div>
+          <!--ques-->
+          
+          <div class="ques">
+            <h3>Price condition</h3>
+            <div class="faq meet">
+              <div class="faq_ques fd"><i class="fa fa-cutlery gry" aria-hidden="true"></i> <i class="fa fa-bus" aria-hidden="true"></i> <i class="fa fa-ticket" aria-hidden="true"></i> Food excluded</div>
+            </div>
+            <div class="faq meet">
+              <div class="faq_ques fd"><i class="fa fa-check" aria-hidden="true"></i> Transportation fares are included.</div>
+            </div>
+            <div class="faq meet">
+              <div class="faq_ques fd"><i class="fa fa-check" aria-hidden="true"></i> Admission fees are included.</div>
+            </div>
+            <div class="faq meet">
+              <div class="faq_ques fd"><i class="fa fa-times" aria-hidden="true"></i> Meals are excluded</div>
+            </div>
+          </div>
+          <!--ques-->
+          
+          <div class="ques">
+            <h3>Meeting point</h3>
+            <div class="faq meet">
+              <div class="faq_ques"><i><img src="images/bts.png" /></i> BTS Station</div>
+              <div class="faq_ques"> - Krung Thon Buri<br>
+                - Saphan Taksin<br>
+                - Siam </div>
+            </div>
+            <div class="faq meet">
+              <div class="faq_ques"><i><img src="images/mrt.png" /></i> MRT Station</div>
+              <div class="faq_ques">- Hua Lamphong</div>
+            </div>
+            <div class="faq meet">
+              <div class="faq_ques"><i><img src="images/hotel.png" /></i> Hotel Pickup</div>
+              <div class="faq_ques">- Hotel Pickup in Bangkok Area</div>
+            </div>
+            <div class="faq meet">
+              <div class="faq_ques"><i><img src="images/train.png" /></i> Railway Station</div>
+              <div class="faq_ques">- Hua Lamphong Railway Station</div>
+            </div>
+          </div>
+          <!--ques-->
+          
+          <div id="map" style="width:100%;height:400px;background:#498ebe" class="mp"></div>
+        </div>
+      </div>
+      <!--col-sm-9-->
+      
+      <div class="col-sm-3 new" >
+        <div class="instant">
+          <div id="datepickers" class="datepicks"></div>
+          <div class="pern">
+            <p><i class="fa fa-users" aria-hidden="true"></i> Guest(s)</p>
+            <span >
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            </span>
+            <div class="line" style="margin-bottom:10px;"></div>
+            <p> <i class="fa fa-user" aria-hidden="true"></i> Price per person</p>
+            <span>1,750 THB</span>
+            <p> <i class="fa fa-usd" aria-hidden="true"></i> Total price</p>
+            <span>3,500 THB</span> </div>
+          <p>100% Satisfaction guaranteed <sub>?</sub> </p>
+          <button type="submit" class="btn btn-primary blue">Instant book</button>
+          <button class="btn btn-default" type="submit" style="border-radius:0px;">Send a message</button>
+        </div>
+      </div>
+      <!--col-sm-3-->
+	</div>
+	<div class="row">
+      <div class="view_fav similar">
+        <h2>Similar Trips</h2>
+        <div class="col-sm-4">
+          <div class="show_data">
+            <div class="show_pic"> <img src="images/log.png">
+              <div class="show_text">
+                <h4><img src="images/loc.png"><span>Bankok</span></h4>
+                <div class="ratng">
+                  <ul class="no-margin no-padding">
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                  <p>THB 1,750.00</p>
+                </div>
+                <span>per person</span> </div>
+            </div>
+            <div class="show_subtext">
+              <p>Our Old Walking Tour</p>
+              <h4><img src="images/user.jpg"> <span>Platpur Expert Shady</span>.</h4>
+            </div>
+          </div>
+          <!--show_data--> 
+        </div>
+        <!--col-sm-4-->
+        
+        <div class="col-sm-4">
+          <div class="show_data">
+            <div class="show_pic"> <img src="images/log.png">
+              <div class="show_text">
+                <h4><img src="images/loc.png"><span>Bankok</span></h4>
+                <div class="ratng">
+                  <ul class="no-margin no-padding">
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                  <p>THB 1,750.00</p>
+                </div>
+                <span>per person</span> </div>
+            </div>
+            <div class="show_subtext">
+              <p>Our Old Walking Tour</p>
+              <h4><img src="images/user.jpg"> <span>Platpur Expert Shady</span>.</h4>
+            </div>
+          </div>
+          <!--show_data--> 
+        </div>
+        <!--col-sm-4-->
+        
+        <div class="col-sm-4">
+          <div class="show_data">
+            <div class="show_pic"> <img src="images/log.png">
+              <div class="show_text">
+                <h4><img src="images/loc.png"><span>Bankok</span></h4>
+                <div class="ratng">
+                  <ul class="no-margin no-padding">
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  </ul>
+                  <p>THB 1,750.00</p>
+                </div>
+                <span>per person</span> </div>
+            </div>
+            <div class="show_subtext">
+              <p>Our Old Walking Tour</p>
+              <h4><img src="images/user.jpg"> <span>Platpur Expert Shady</span>.</h4>
+            </div>
+          </div>
+          <!--show_data--> 
+        </div>
+        <!--col-sm-4--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer" >
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="bottom">
+          <h2>Contact Info</h2>
+          <span>Jalan Piit No 1 Sadang Serang Bandung</span> <a>Mail:contact@doaminname.com</a> </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="bottom social">
+          <h2>Connect With Us</h2>
+          <span>Connect and follow us on social Media</span>
+          <ul>
+            <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="bottom">
+          <h2>Newsletter</h2>
+          <span>Subscribe To Our Newsletter.We Won't Spam.<br>
+          Promise </span>
+          <form class="form-inline subscribe">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Your Email">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="end"> Copyright © 2017 <span style="color:#fff;">Domain Name</span>. Powered by <a style="color:#fff;">Future work technologies</a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- datepicker --> 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/slick.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script> 
+<script src="js/lightgallery-all.min.js"></script> 
+<script src="js/jquery.mousewheel.min.js"></script> 
+
+<script src="js/jquery.sticky-kit.min.js"></script> 
+<script>
+        		function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('.dropdown a');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+
+
+			});
+			
+			
+			/* Slik Slider Js Include Here */
+			
+			 $('.responsive').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+/*tab script*/
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+/*radio accordion*/
+$('#r11').on('click', function(){
+  $(this).parent().find('a').trigger('click')
+})
+
+$('#r12').on('click', function(){
+  $(this).parent().find('a').trigger('click')
+})
+
+$('#r13').on('click', function(){
+  $(this).parent().find('a').trigger('click')
+})
+</script> 
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+</script> 
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallerys').lightGallery();
+        });
+</script> 
+<script>
+  $( function() {
+    $( "#datepickers" ).datepicker();
+  } );
+</script> 
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+
+</script>
+<script type="application/javascript">
+/*
+* Fix sidebar at some point and remove
+* fixed position at content bottom
+*/
+$(window).scroll(function () {
+	var fixSidebar = $('.gallery_sec').innerHeight();
+	var contentHeight = $('.content_height').innerHeight();
+	var sidebarHeight = $('.instant').height();
+  var sidebarBottomPos = contentHeight - sidebarHeight; 
+  var trigger = $(window).scrollTop() - fixSidebar;
+
+      	if ($(window).scrollTop() >= fixSidebar) {
+          	$('.instant').addClass('fixed');
+      	} else {
+          	$('.instant').removeClass('fixed');
+      	}
+
+      	if (trigger >= sidebarBottomPos) {
+          	$('.new').addClass('bottom');
+      	} else {
+          	$('.new').removeClass('bottom');
+      	}
+});
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv62nJYxuVTWtJA5BT1gM5E3Sy3v-QJuc&callback=myMap"></script> 
+<style type="text/css">
+	.row{
+		position:relative;
+		}
+	.fixed {
+        position: fixed;
+        top: 83px;
+        width: 270px;
+		
+    }
+	.bottom .fixed{
+		position:static;}
+
+    .bottom {
+        position: unset;
+        bottom: 0;
+        top: auto;
+		right:0;
+        width: 270px;
+    }
+</style>
+</body>
+</html>

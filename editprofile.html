@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Edit profile</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+<link href="css/slick-theme.css" rel="stylesheet">
+<link href="css/checkbox.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" style="background: #15304d;border: 0px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#" style="color:#fff;">LOGO</a> </div>
+    <div id="navbar" class="navbar-collapse collapse topbar">
+      <ul class="nav navbar-nav navbar-right header">
+        <li class="slt">
+          <select>
+            <option value="d" selected>USD</option>
+            <option value="e">Dollar</option>
+            <option value="f">Euro</option>
+          </select>
+        </li>
+        <li class="tripbtn"><a href="#"><span>List Your Trip</span></a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#" data-toggle="modal" data-target=".loginmodal">Log In</a></li>
+        <li><a href="#" data-toggle="modal" data-target=".signupmodal">Sign Up</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle account" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/user.jpg" /> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dollar</a></li>
+            <li><a href="#">Euro</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<section class="basic">
+  <div class="second">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="base base_b"> 
+          
+         	 <!--small_slider-->
+              <div class="small_slider">
+              <h3>Trip</h3>
+              <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item">
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                   </div>
+                  <div class="item">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                   </div>
+                  <div class="item active">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                  </div>
+                </div>
+              
+               </div>
+               </div><!--small_slider-->
+               
+            <div class="tab">
+              <h2>List Trip</h2>
+              <button class="tablinks active" onclick="openCity(event, 'General')" id="defaultOpen"><span>1</span>General</button>
+              <button class="tablinks" onclick="openCity(event, 'Verification')"><span>2</span>Verification</button>
+              <button class="tablinks" onclick="openCity(event, 'Settings')"><span>3</span>Settings</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <form>
+            <div id="General" class="tabcontent">
+              <div class="browse">
+                <div class="profilepic"><img src="images/noimg.png" /></div>
+                <div class="file-upload">
+                  <label for="upload" class="file-upload__label">Browse Photos</label>
+                  <input id="upload" class="file-upload__input" type="file" name="file-upload">
+                </div>
+              </div>
+              <div class="photoss">
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputEmail3" class="control-label">Name<sup>*</sup></label>
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputEmail1" placeholder="">
+                  </div>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputEmail2" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Nickname</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Date of birth<sup>*</sup></label>
+                  </div>
+                  <div class="col-sm-3">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Gender<sup>*</sup></label>
+                  </div>
+                  <div class="col-sm-9">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Languages<sup>*</sup></label>
+                  </div>
+                  <div class="col-sm-9">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Video Link URL</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Address</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Country of Passport</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">Current city</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword5" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputPassword3" class="control-label">About yourself</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+                <h5 class="frequent">FAQ</h5>
+                <div class="form-group">
+                  <label for="exampleInputSummary">What's my hobby?</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                  <p class="help-block right">250 Characters left</p>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputSummary">Why do I become a Local Expert?</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                  <p class="help-block right">250 Characters left</p>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12 no-padding">
+                    <button type="submit" class="btn btn-primary blue right">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+              <!--photos--> 
+              
+            </div>
+            <!--General-->
+            
+            <div id="Verification" class="tabcontent">
+              <div class="verify">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="box">
+                      <div class="verif"><img src="images/email.png" /></div>
+                      <h3>Email addess</h3>
+                      <span>ritika@avainfotech.com</span>
+                      <h4><i class="fa fa-check-circle" aria-hidden="true"></i> Verified</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="box">
+                      <div class="verif"><img src="images/phone.png" /></div>
+                      <h3>Phone number</h3>
+                      <input type="text" placeholder="number">
+                      <button type="submit" class="btn btn-primary blue">Send sms</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="box">
+                      <div class="verif"><img src="images/id.png" /></div>
+                      <h3>ID card</h3>
+                      <div class="link"> <span>Upload id card</span>
+                        <div class="file-upload">
+                          <label for="upload" class="file-upload__label">+ Upload</label>
+                          <input id="upload" class="file-upload__input" type="file" name="file-upload">
+                        </div>
+                      </div>
+                      <input type="text" placeholder="ID card umber">
+                      <button type="submit" class="btn btn-primary blue">Save</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="box">
+                      <div class="verif"><img src="images/bank.png" /></div>
+                      <h3>Bank account</h3>
+                      <div class="link"> <span>Upload bank account</span>
+                        <div class="file-upload">
+                          <label for="upload" class="file-upload__label">+ Upload</label>
+                          <input id="upload" class="file-upload__input" type="file" name="file-upload">
+                        </div>
+                      </div>
+                      <div class="acnt">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <input type="text" placeholder="Account number">
+                      </div>
+                      <button type="submit" class="btn btn-primary blue">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="Settings" class="tabcontent"> 
+            	
+                <div class="photoss photoset">
+                <h3 class="subheadb">Set password</h3>
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputEmail3" class="control-label">New password<sup>*</sup></label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail1" placeholder="">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="col-sm-3">
+                    <label for="inputEmail3" class="control-label">Confirm new password<sup>*</sup></label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail1" placeholder="">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="col-sm-offset-9 col-sm-3">
+                    <button type="submit" class="btn btn-primary blue right">Save Changes</button>
+                  </div>
+                </div>
+                
+                <div class="notsetting">
+                	<h3 class="subheadb">Notifications settings</h3>
+                    <p>Select your preferred channels for notification (Email is compulsory).</p>
+                    
+                    <div class="tog">
+                    	<span>Email:abc@gmail.com</span>
+                        <div class="my-toggle-btn-wrapper">
+                          <div class="my-toggle-btn">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1"> </label>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subheadb">Connect with other accounts</h3>
+                    
+                    <ul class="others">
+                    	<li class="fconnect">
+                        	<a href="">Connect with facebook</a>
+                        </li>
+                        <li class="mconnect">
+                        	<a href="">Connect with Mobile Connect</a>
+                        </li>
+                        <li class="lconnect">
+                        	<a href="">Setup LINE Notify</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+                </div>
+            
+            </div>
+            
+          </form>
+        </div>
+        <!--col-sm-9--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="bottom">
+          <h2>Contact Info</h2>
+          <span>Jalan Piit No 1 Sadang Serang Bandung</span> <a>Mail:contact@doaminname.com</a> </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="bottom social">
+          <h2>Connect With Us</h2>
+          <span>Connect and follow us on social Media</span>
+          <ul>
+            <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="bottom">
+          <h2>Newsletter</h2>
+          <span>Subscribe To Our Newsletter.We Won't Spam.<br>
+          Promise </span>
+          <form class="form-inline subscribe">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Your Email">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="end"> Copyright © 2017 <span style="color:#fff;">Domain Name</span>. Powered by <a style="color:#fff;">Future work technologies</a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/slick.min.js"></script> 
+<script>
+        		function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('.dropdown a');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+
+
+			});
+			
+			
+			/* Slik Slider Js Include Here */
+			
+			 $('.responsive').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+/*tab script*/
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+/*radio accordion*/
+$('#r11').on('click', function(){
+  $(this).parent().find('a').trigger('click')
+})
+
+$('#r12').on('click', function(){
+  $(this).parent().find('a').trigger('click')
+})
+
+$('#r13').on('click', function(){
+  $(this).parent().find('a').trigger('click')
+})
+    </script>
+</body>
+</html>
