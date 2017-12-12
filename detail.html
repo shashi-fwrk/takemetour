@@ -364,6 +364,7 @@
       </div>
     </div>
   </div>
+  <div class="clr"></div>
 </section>
 <footer class="footer" >
   <div class="container">
@@ -577,9 +578,9 @@ $(window).scroll(function () {
       	}
 
       	if (trigger >= sidebarBottomPos) {
-          	$('.new').addClass('bottom');
+          	$('.new').addClass('bottom1');
       	} else {
-          	$('.new').removeClass('bottom');
+          	$('.new').removeClass('bottom1');
       	}
 });
 </script>
@@ -594,16 +595,19 @@ $(window).scroll(function () {
         width: 270px;
 		
     }
-	.bottom .fixed{
+	.bottom1 .fixed{
 		position:static;}
 
-    .bottom {
-        position: unset;
+     .bottom1 {
+        position: absolute;
         bottom: 0;
         top: auto;
 		right:0;
         width: 270px;
     }
+	.clr{
+		clear:both;
+	}
 </style>
 </body>
 </html>
